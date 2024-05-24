@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> <!--latrobe font-->
-    <title>La Trobe Conference</title> <!--title-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--latrobe favicon-->
-    <style>
-        body{
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 1rem;
-        }
-    
-    /*navbar with underline animation*/
-        ul{
-            background-color: white;
-            position: sticky;
-            top: 0;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            text-align: center;
-            flex-direction: row;
-            align-items: center;
-        }
-    
-        .nav-link {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 10px 14px;
-            text-decoration: none;
-            background-image: linear-gradient(white, white), linear-gradient(black, black);
-            position: relative;
-        }
-    
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            left: 0;
-            bottom: 0;
-            width: 0%;
-            background-color: black;
-            transition: width .2s;
-        }
-    
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    
-    </style>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> <!--latrobe font-->
+        <title>La Trobe Conference</title> <!--title-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--latrobe favicon-->
+        <link rel="stylesheet" href="places.css">
     </head>
     <body>
     <!--navbar-->
-    <ul>
-        <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
-        <li><a href="Homepage.html" class="nav-link">Home</a></li>
-        <li><a href="Info.html" class="nav-link">Conference Info</a></li>
-        <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
-        <li><a href="Travel.html" class="nav-link">Travel</a></li>
-        <li><a href="About.html" class="nav-link">About</a></li>
-    </ul>
+    <div class="nav">
+        <ul>
+            <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
+            <li><a href="Homepage.html" class="nav-link">Home</a></li>
+            <li><a href="Info.html" class="nav-link">Conference Info</a></li>
+            <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
+            <li><a href="Travel.html" class="nav-link">Travel</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+
+        <!--Travel Info blocks right left right left-->
+        <h1 style="text-align: center;">Travel in Australia</h1>
+        <div class="travel-blocks">
+            <div class="crown2">
+                <p>Crown Melbourne</p>
+                <a href="#crown1"><img src="images/IMG_crown 2.jpg" alt="crown2"></a>
+            </div>
+            <div class="zoo">
+                <p>Melbourne Zoo</p>
+                <a href="#zoo1"><img src="images/IMG_zoo_entrance.jpg" alt="zoo1"></a>
+            </div>
+            <div class="lunapark">
+                <p>Luna Park</p>
+                <a href="#lunapark1"><img src="images/lunapark.jpeg" alt="lunapark"></a>
+            </div>
+        </div>
+        <!--info about travel place-->
+        <div class="places-info">
+            <div class="mcg">
+                <h1>Melbourne Cricket Ground</h1>
+                <img src="images/IMG_MCG topview.jpg" alt="mcg_top">
+                <p>The Melbourne Cricket Ground (MCG) is an Australian sports stadium, the sports stadium is located in Yarra Park of Melbourne City. It is known for its rich history of sporting events. The stadium has a capacity of over 100,000 people and is the largest stadium in Australia, it is the largest stadium in the Southern Hemisphere, the 11th largest globally, and the second-largest cricket ground by capacity, after the Narendra Modi Stadium. In its early history, the MCG was built atop a Wurundjeri camping ground, this was during 1853. The first game on MCG was against a military team at the Old Mint site, at the corner of William and La Trobe Streets.</p>
+            </div> 
+            <img src="images/paper-plane.png" alt="plane">  
+            <div class="zoo1" id="zoo1">
+                <h1>Melbourne Zoo</h1>
+                <img src="images/IMG_zoo_animal.jpg" alt="zoo1">
+                <p>Melbourne Zoo is a zoo in Melbourne. It is home to the wonders of the natural world, showcasing a captivating array of wildlife from diverse ecosystems across the globe. With its lush landscapes and meticulously designed habitats, the zoo provides a safe haven for a wide variety of animal species, including endangered and rare ones. The Zoological Society of Victoria formed in October 1857 to bring in foreign animals and plants. Initially, the animals were kept in Richmond Paddock. By 1861, the organization rebranded as the "Acclimatisation Society of Victoria." Today, Melbourne Zoo stands as a beacon of conservation, dedicated to preserving biodiversity and advocating for the welfare of all creatures, great and small.</p>
+            </div>   
+            <img src="images/plane-2.png" alt="plane2">    
+            <div class="lunapark1" id="lunapark1">
+                <h1>Lunapark</h1>
+                <img src="images/IMG_lunapark_giantwheel.jpg" alt="luna-wheel">
+                <p>Lunapark is one of Melbourne's most historic amusement park, it is located in Phillip Bay, St Kilda, Melbourne. Luna Park, an integral part of Melbourne's cultural fabric, has delighted generations of visitors with its nostalgic charm and thrilling rides. Its enduring popularity is a testament to its timeless appeal and vibrant atmosphere. The park's name is known due to its rich historic presence as Luna Park was built by American showman J.D. Williams,together with the Phillips brothers Harold, Leon and Herman. The park in Melbourne was opened in 1912 13 December and is still operating to this day, with many interesting rides and a reasonable price.</p>
+            </div>
+            <img src="images/plane-3.png" alt="plane3">
+            <div class="crown">
+                <h1 id="crown1">Crown Melbourne</h1>
+                <img src="images/IMG_crown_1.jpg" alt="crown1">
+                <p>Crown Melbourne is in the heart of Melbourne, the Yarra River in Melbourne. Overlooking the river, you will be able to hop into the Casino to try out your luck. If you are not into casino's the crown also provides restaurants and hotel for luxury or you can experience a diverse range of activities and entertainment at the Metropol Precinct, ideal for a family day out or a night with friends. Delight in the allure of the infinity pool, explore versatile event venues, or indulge in shopping and entertainment options. The crown was founded, owned and run by Lloyd Williams until taken over by Publishing & Broadcasting Limited in 1999.</p>
+            </div>
+            <a href="#top" style="position: fixed; bottom: 20px; right: 20px;"><img src="images/backtop.png" alt="top" width="40" height="40"></a>
+        </div>
     </body>
+    
+        <!--footer-->
+    <footer>
+        <p>&copy; 2024 La Trobe University. All rights reserved. Website made by Ian Goh Yu Hong, Student ID 21960678.</p>
+    </footer>
 </html>

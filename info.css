@@ -1,0 +1,215 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #B0E0E6;
+}
+
+/*navbar with underline animation*/
+.nav ul{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    background-image: linear-gradient(black, black), linear-gradient(white, white);
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: white;
+    transition: width .2s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/*info-block ---> location block*/
+
+.info-title{
+    color: white;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    background-image: url(images/tech-background.jpg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*background colours and box shadow*/
+}
+
+.info{
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info h2{
+    color: darkgreen;
+}
+
+.info h2, p{
+    margin-left: 30px;
+}
+
+.info button{
+    margin-left: 25px;
+    border-radius: 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.info button:hover {
+    background-color: #2b782f; /* Darker shade of the button color for hover effect */
+  }
+
+/*location*/
+
+.location{
+    display: flex;
+    align-items: center;
+}
+
+.location img{
+    margin: 20px;
+    float: right;
+    border-radius: 20px; 
+    width: 600px;
+    height: 400px;
+}
+
+.location:after{
+    content: "";
+    display: table;
+    clear: both; /*clearfix issue with image getting out of border*/
+}
+
+/*guest speaker*/
+.guest {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.guest h1{
+    text-align: center;
+    color: #2b782f;
+}
+
+
+/*jasmine*/
+
+.jasmine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jasmine img{
+    border-radius: 20px;
+}
+
+/*marcus*/
+.marcus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcus img{
+    border-radius: 20px;
+}
+
+/*isabella*/
+.isabella{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isabella img{
+    border-radius: 20px;
+}
+
+/*schedule*/
+.schedule{
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.schedule h1 {
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.schedule table {
+    width: 100%; /*makes table fill the space*/
+    border-collapse: collapse; /*removes grey table border*/
+}
+
+.schedule table, th, td {
+    border: 1px solid grey;
+}
+
+.schedule th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.schedule th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.schedule tr:hover {
+    background-color: lightgray;
+}
+
+    /*footer*/
+    footer{
+        background-color: black;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+    }

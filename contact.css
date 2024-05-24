@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: beige;
+}
+
+/*navbar with underline animation*/
+.nav ul{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    background-image: linear-gradient(black, black), linear-gradient(white, white);
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: white;
+    transition: width .2s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/*contact*/
+
+.contact{
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.left-block {
+    flex: 1;
+    height: 100%;
+}
+
+.right-block {
+    display: block;
+    background-color: rgb(0, 137, 210);
+    padding: 40px;
+    width: 50%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+}
+
+.right-block h1, .right-block p, .right-block a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+
+/*udnerline animation*/
+
+/* Underline styles */
+
+.contact ul {
+    background-color:  rgb(0, 137, 210);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.contact li {
+	margin: 0 10rem;
+}
+
+.contact a {
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+    text-align: center;
+}
+
+.contact a::after {
+	content: '';
+	position: absolute;
+    width: 100%;
+	bottom: 0px;
+	left: 0;
+	height: 0.1em;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.contact a:hover::after, .contact a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+}
+
+
+/*footer*/
+footer{
+    background-color: black;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}

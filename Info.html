@@ -1,66 +1,127 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> <!--latrobe font-->
-    <title>La Trobe Conference</title> <!--title-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--latrobe favicon-->
-    <style>
-        body{
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 1rem;
-        }
-    
-    /*navbar with underline animation*/
-        ul{
-            background-color: white;
-            position: sticky;
-            top: 0;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            text-align: center;
-            flex-direction: row;
-            align-items: center;
-        }
-    
-        .nav-link {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 10px 14px;
-            text-decoration: none;
-            background-image: linear-gradient(white, white), linear-gradient(black, black);
-            position: relative;
-        }
-    
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            left: 0;
-            bottom: 0;
-            width: 0%;
-            background-color: black;
-            transition: width .2s;
-        }
-    
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    
-    </style>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> <!--latrobe font-->
+        <title>La Trobe Conference</title> <!--title-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--latrobe favicon-->
+        <link rel="stylesheet" href="info.css">
     </head>
     <body>
     <!--navbar-->
-    <ul>
-        <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
-        <li><a href="Homepage.html" class="nav-link">Home</a></li>
-        <li><a href="Info.html" class="nav-link">Conference Info</a></li>
-        <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
-        <li><a href="Travel.html" class="nav-link">Travel</a></li>
-        <li><a href="About.html" class="nav-link">About</a></li>
-    </ul>
+    <div class="nav">
+        <ul>
+            <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
+            <li><a href="Homepage.html" class="nav-link">Home</a></li>
+            <li><a href="Info.html" class="nav-link">Conference Info</a></li>
+            <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
+            <li><a href="Travel.html" class="nav-link">Travel</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+
+        <!--info blocks start-->
+        <div class="info-title">
+        <h1>Conference Information</h1>
+        <h2>Explore Details, Dive into Excitement: Guide to the La Trobe Annual Conference</h2>
+        </div>
+        <div class="info">
+            <div class="location">
+                <h2>Information</h2>
+                <p>The conference will be held in the La Trobe University sport stadium, the event will take place from 9AM to 5PM on 27/7/2024. Click on the Travel button below to learn how to get here!</p>
+                <img src="images/homeimage.png" alt="location">
+            </div>
+            <a href="Travel.html"><button>Travel</button></a>
+        </div>
+        <div class="guest">
+            <h1>Guest Speaker</h1>
+            <p>As mentioned in the homepage, there will be our special guest speaker John Doe, other than John Does we will have 3 more speakers.</p>
+            <h2>Jasmine Gillie</h2>
+            <div class="jasmine">
+                <img src="images/guest-j.jpg" alt="guest-j">
+                <p>Jasmine Gillie is a cybersecurity expert known for her practical approach and effective solutions. With her years of experience, she helped many businesses stay prevent online threats. Jasmine's strategies have made cybersecurity easier to understand and implement for companies from different backgrounds. She's excited about sharing her knowledge and believes that collaboration is the key to internet security. With Jasmine's attitude and expertise, this makes her a trusted leader in the cybersecurity community and is well known for what she does.</p>
+            </div>
+            <h2 style="text-align: right;">Marcus Thompson</h2>
+            <div class="marcus">
+                <p>Marcus Thompson is a software engineer, he was in La Trobe University for his bachelor's degree. With years of experience Marcus started out as an Intern for Microsoft and worked his way up to the experienced individual he is currently. He will talk about his experience is a startup company the interesting working environments he has experienced throughout his career.</p>
+                <img src="images/guest-m.jpg" alt="marcus">
+            </div>
+            <h2>Isabella Rodriguez</h2>
+            <div class="isabella">
+                <img src="images/guest-i.jpg" alt="Isabella">
+                <p>Isabelle Rodriguez also was a student in La Trobe University, she did her master's degree in Artificial Intelligence. Today she will be speaking about her experience in Artificial Intelligence. She will also cover the topics of Machine Learning, Neural Networks, Natural Language Proccesing and Deep Learning. As she is very experienced in the field she will also be talking about ways you can find emoployers and potray your skills to them.</p>
+            </div>
+        </div>
+        <div class="schedule">
+            <h1>Schedule</h1>
+            <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Speaker</th>
+                        <th>Location</th>
+                    </tr>
+
+
+                    <tr>
+                        <td>09:00 AM - 09:30 AM</td>
+                        <td>Registration</td>
+                        <td>-</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>09:30 AM - 10:30 AM</td>
+                        <td>Opening - Intro with John Doe</td>
+                        <td>John Doe</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM - 11:00 AM</td>
+                        <td>Coffee Break</td>
+                        <td>-</td>
+                        <td>Cafeteria</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 12:00 PM</td>
+                        <td>Cybersecurity Trends</td>
+                        <td>Jasmine Gillie</td>
+                        <td>Room A</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM - 01:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>-</td>
+                        <td>Cafeteria</td>
+                    </tr>
+                    <tr>
+                        <td>01:00 PM - 02:00 PM</td>
+                        <td>Innovative Tech Solutions</td>
+                        <td>Marcus Thompson</td>
+                        <td>Room A</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 03:00 PM</td>
+                        <td>AI and the Future</td>
+                        <td>Isabella Rodriguez</td>
+                        <td>Room A</td>
+                    </tr>
+                    <tr>
+                        <td>03:00 PM - 04:00 PM</td>
+                        <td>Networking Session</td>
+                        <td>-</td>
+                        <td>Cafeteria</td>
+                    </tr>
+                    <tr>
+                        <td>04:00 PM - 05:00 PM</td>
+                        <td>Closing Story with John</td>
+                        <td>John Doe</td>
+                        <td>Main Hall</td>
+                    </tr>
+            </table>
+        </div>
     </body>
+     <!--footer-->
+    <footer>
+        <p>&copy; 2024 La Trobe University. All rights reserved. Website made by Ian Goh Yu Hong, Student ID 21960678.</p>
+    </footer>
 </html>

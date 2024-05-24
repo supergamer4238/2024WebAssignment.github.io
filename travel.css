@@ -1,0 +1,107 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: beige;
+}
+
+h1{
+    color: darkblue;
+}
+
+/*navbar with underline animation*/
+.nav ul{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    background-image: linear-gradient(black, black), linear-gradient(white, white);
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: white;
+    transition: width .2s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/*ptv*/
+.ptv{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+/*tram*/
+.tram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tram img{
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+/*train*/
+.train {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.train img{
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+/*bus*/
+.bus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bus img{
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+    /*footer*/
+    footer{
+        background-color: black;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+    }

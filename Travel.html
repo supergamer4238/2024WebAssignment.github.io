@@ -4,63 +4,43 @@
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> <!--latrobe font-->
     <title>La Trobe Conference</title> <!--title-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!--latrobe favicon-->
-    <style>
-        body{
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 1rem;
-        }
-    
-    /*navbar with underline animation*/
-        ul{
-            background-color: white;
-            position: sticky;
-            top: 0;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            text-align: center;
-            flex-direction: row;
-            align-items: center;
-        }
-    
-        .nav-link {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 10px 14px;
-            text-decoration: none;
-            background-image: linear-gradient(white, white), linear-gradient(black, black);
-            position: relative;
-        }
-    
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            left: 0;
-            bottom: 0;
-            width: 0%;
-            background-color: black;
-            transition: width .2s;
-        }
-    
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="travel.css">
     </head>
     <body>
     <!--navbar-->
-    <ul>
-        <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
-        <li><a href="Homepage.html" class="nav-link">Home</a></li>
-        <li><a href="Info.html" class="nav-link">Conference Info</a></li>
-        <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
-        <li><a href="Travel.html" class="nav-link">Travel</a></li>
-        <li><a href="About.html" class="nav-link">About</a></li>
-    </ul>
+    <div class="nav">
+        <ul>
+            <a class="navbar-brand" href="Homepage.html"><img src="images/logo.png" alt="logo"></a> <!--latrobe logo-->
+            <li><a href="Homepage.html" class="nav-link">Home</a></li>
+            <li><a href="Info.html" class="nav-link">Conference Info</a></li>
+            <li><a href="Places.html" class="nav-link">Places of Interest</a></li>
+            <li><a href="Travel.html" class="nav-link">Travel</a></li>
+            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="Contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="ptv">
+        <h1>Public Transport</h1>
+        <p>In Melbourne forms of Public Transports are common, it is important to get a MyKi card and top it up in order to use them.</p>
+        <h2>Tram</h2>
+        <div class="tram">
+            <img src="images/IMG_metro_tram.jpg" alt="tram" width="500" height="auto">
+            <p>In melbourne, trams are a common form of public transport. La Trobe University has a tram stop on route 86 for anyone looking to use the tram to reach the venue. PTV has an app available to download on IOS and Android for users to enter La Trobe University and have a route planned ahead for them.</p>
+        </div>
+        <h2>Train</h2>
+        <div class="train">
+            <img src="images/IMG_metro_train_map.gif" alt="train" width="400" height="auto">
+            <p>Melbourne has a huge network of train stations, make sure to get an image of the train map to find the train stations near you. However, La Trobe does not have a train station nearby and is required for you to take a train station to the nearest available public transport that reaches La Trobe. PTV has an app available to download on IOS and Android for users to enter La Trobe University and have a route planned ahead for them. </p>
+        </div>
+        <h2>Bus</h2>
+        <div class="bus">
+            <img src="images/bus.jpg" alt="bus">
+            <p>Busses are a common form of transport in Melbourne, it is available in most places of the area and has a Bus stop in La Trobe University. There are many different routes of busses that goes through La Trobe Bus stop so be sue to get the PTV app for IOS and Android users that would plan the route to La Trobe University for you.</p>
+        </div>
+    </div>
     </body>
+ <!--footer-->
+     <footer>
+        <p>&copy; 2024 La Trobe University. All rights reserved. Website made by Ian Goh Yu Hong, Student ID 21960678.</p>
+    </footer>
 </html>

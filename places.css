@@ -1,0 +1,218 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+body {
+    background-color: #f7f0e6;
+    color: #333;
+}
+
+/*navbar with underline animation*/
+.nav ul{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul.scrolled {
+    background-color: grey;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    background-image: linear-gradient(black, black), linear-gradient(white, white);
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: white;
+    transition: width .2s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/*Travel blocks*/
+
+.travel-blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*background colours and box shadow*/
+}
+
+.travel-blocks h1{
+    text-align: center;
+}
+
+.travel-blocks img{
+    border-radius: 20px;
+    width: 450px;
+    height: 250px;
+}
+
+.crown2 {
+    display: block;
+    padding-right: 20px;
+}
+
+.zoo {
+    padding-right: 20px;
+}
+
+/*Travel place info*/
+.places-info{
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.places-info img {
+    display: block;
+}
+
+.places-info h1{
+    color: darkblue;
+}
+
+.mcg{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.mcg h1{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.mcg img{
+    float: left;
+    border-radius: 20px; 
+    margin-right: 20px;
+}
+
+.mcg:after {
+    content: "";
+    display: table;
+    clear: both; /*clearfix issue with image getting out of border*/
+}
+
+.zoo1{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.zoo1 h1{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.zoo1 img{
+    float: left;
+    border-radius: 20px; 
+    margin-right: 20px;
+}
+
+.zoo1:after {
+    content: "";
+    display: table;
+    clear: both; /*clearfix issue with image getting out of border*/
+}
+
+.lunapark1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lunapark1 h1 {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.lunapark1 img {
+    float: left;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.lunapark1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.crown {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.crown h1 {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.crown img {
+    float: left;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.crown:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /*footer*/
+    footer{
+        background-color: black;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+
